@@ -31,4 +31,10 @@ part.write(...) : Part를 통해 전송된 데이터를 저장할 수 있다.
 
 서블릿이 제공하는 Part는 편하기는 하지만, HttpServletRequest를 사용해야 하고, 추가로 파일 부분만 구분하려면 여러가지 코드를 넣어야한다.
 
+# /25-02-26
+## 스프링과 파일업로드
+스프링에서는 MultipartFile을 사용하면 된다.
 
+### MultipartFile 주요 메서드
+file.getOriginalFilename() : 업로드 파일명
+file.transferTo(...) : 파일 저장
